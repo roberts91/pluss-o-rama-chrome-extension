@@ -6,9 +6,9 @@ chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
     {
         
         // Inject jQuery
-    	chrome.tabs.executeScript(tab.ib, {
-    		file: 'jquery.min.js'
-    	});
+        chrome.tabs.executeScript(tab.ib, {
+        	file: 'jquery.min.js'
+        });
     
         // Inject custom script
     	chrome.tabs.executeScript(tab.ib, {
