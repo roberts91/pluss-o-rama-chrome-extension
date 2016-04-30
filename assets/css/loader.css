@@ -1,0 +1,33 @@
+#pluss-o-rama-loader {
+	position: fixed;
+	right: 0;
+	top: 20em;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 10px;
+	z-index: 9999;
+	border-top: 1.5em solid transparent;
+	border-right: 1.5em solid transparent;
+	border-bottom: 1.5em solid transparent;
+	border-left: 1.5em solid #e2e2e2;
+	transform: translateZ(0);
+	animation: load8 .7s infinite linear;
+}
+
+#pluss-o-rama-loader,
+#pluss-o-rama-loader:after {
+	border-radius: 50%;
+	width: 12em;
+	height: 12em;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
