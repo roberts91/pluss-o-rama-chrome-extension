@@ -2,7 +2,23 @@ jQuery.noConflict();
 
 (function($) {
     
+    $(window).load(function(){
+        
+        alert('load');
+        
+    });
+    
     $(document).ready(function(){
+        
+        alert('Yes');
+        
+        // TODO: Create function to determine if this is a plus-article
+        var is_plus = true;
+        
+        // TODO: Create function that determine which template to plussify
+        var template_type = '';
+        
+        // TODO: Trigger correct function for the current template type
         
         // Trigger script
         $().fixArticle();

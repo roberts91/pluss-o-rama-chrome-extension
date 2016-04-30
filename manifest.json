@@ -1,23 +1,28 @@
 {
-  "name": "Pluss-o-rama",
-  "version": "1.0",
-  "manifest_version": 2,
-  "description": "This extension allows you to read those darn plus-articles. Thanks Jon Inge!",
-  "background": {
-    "scripts": [
-	  "background.js"
-    ],
-    "persistent": true
-  },
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
-  "options_page": "options.html",
-  "permissions": [
-    "https://*/*",
-    "http://*/*",
-    "tabs"
-  ]
+	"name" : "Pluss-o-rama",
+	"version": "1.1",
+	"manifest_version": 2,
+	"description": "Read plus-articles with ease!",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://*/*",
+				"http://*/*"
+			],
+			"js": [
+				"scripts/vendor/jquery.min.js",
+				"scripts/main.js"
+			]
+		}
+	],
+	"icons": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"permissions": [
+		"https://*/*",
+		"http://*/*",
+		"tabs"
+	]
 }
