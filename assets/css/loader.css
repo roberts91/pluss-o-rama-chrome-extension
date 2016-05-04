@@ -13,6 +13,7 @@
 	border-left: 1.5em solid #e2e2e2;
 	transform: translateZ(0);
 	animation: load8 .7s infinite linear;
+	z-index: 10001;
 }
 
 #pluss-o-rama-loader,
